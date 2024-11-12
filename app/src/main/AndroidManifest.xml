@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Seminario_di_cartas"
         tools:targetApi="31">
         <activity
+            android:name=".ej4"
+            android:exported="false"
+            android:label="@string/title_activity_ej4" />
+        <activity
             android:name=".ej3"
             android:exported="false" />
         <activity
