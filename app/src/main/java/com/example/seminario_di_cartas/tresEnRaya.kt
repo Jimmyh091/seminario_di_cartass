@@ -125,14 +125,19 @@ class tresEnRaya : AppCompatActivity() {
         }
 
         if (numX == 2) numX = 0
+        else numX++
 
         casillas[x][y].isEnabled = false
 
         if (comprobarVictoria() == 0){
             if (numTurnos++ != 4){
+
+                var x : Int
+                var y : Int
+
                 do {
-                    val x = (0..2).random()
-                    val y = (0..2).random()
+                    x = (0..2).random()
+                    y = (0..2).random()
                 }while (tablero[x][y].first != 0)
 
                 tablero[x][y] = Pair(2, numO)
@@ -144,8 +149,13 @@ class tresEnRaya : AppCompatActivity() {
                 }
 
                 if (numO == 2) numO = 0
+                else numO++
 
                 casillas[x][y].isEnabled = false
+
+                if (comprobarVictoria() == 2){
+                    resultado()
+                }
 
             }else{
                 resultado()
@@ -166,119 +176,140 @@ class tresEnRaya : AppCompatActivity() {
         else if (resultado == 1) titulo = "Has ganado :)"
         else titulo = "Has perdido :("
 
+        for (it in 0 until tablero.size){
+            for (it2 in 0 until tablero[0].size){
+                casillas[it][it2].isEnabled = false
+            }
+        }
+
         texto.text = titulo
     }
 
     fun comprobarVictoria() : Int{
 
         for (it in 0 until tablero.size){
-            if (tablero[it][0].first == tablero[it][1].first && tablero[it][1].first == tablero[it][2].first){
 
-                for (it2 in 0 until tablero.size){
-                    if (tablero[it][0].first == 1){
+            if (tablero[it][0].first != 0){
+                if (tablero[it][0].first == tablero[it][1].first && tablero[it][1].first == tablero[it][2].first){
 
-                        when{
-                            tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_uno)
-                            tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_dos)
-                            tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_tres)
-                        }
+                    for (it2 in 0 until tablero.size){
+                        if (tablero[it][0].first == 1){
 
-                    }else{
+                            when{
+                                tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_uno)
+                                tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_dos)
+                                tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_tres)
+                            }
 
-                        when{
-                            tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_uno)
-                            tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_dos)
-                            tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_tres)
+                        }else{
+
+                            when{
+                                tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_uno)
+                                tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_dos)
+                                tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_tres)
+                            }
+
                         }
                     }
-                }
 
-                return tablero[it][0].first
+                    return tablero[it][0].first
+                }
             }
+
         }
 
         for (it in 0 until tablero[0].size){
-            if (tablero[0][it].first == tablero[1][it].first && tablero[1][it].first == tablero[2][it].first){
 
-                for (it2 in 0 until tablero.size){
+            if (tablero[0][it].first != 0){
 
-                    if (tablero[0][it].first == tablero[1][it].first && tablero[1][it].first == tablero[2][it].first){
+                if (tablero[0][it].first == tablero[1][it].first && tablero[1][it].first == tablero[2][it].first){
+
+                    for (it2 in 0 until tablero.size){
+
+                        if (tablero[0][it].first == 1){
+
+                            when{
+                                tablero[it2][it].second == 0 -> casillas[it2][it].setImageResource(R.drawable.equis_azul_uno)
+                                tablero[it2][it].second == 1 -> casillas[it2][it].setImageResource(R.drawable.equis_azul_dos)
+                                tablero[it2][it].second == 2 -> casillas[it2][it].setImageResource(R.drawable.equis_azul_tres)
+                            }
+
+                        }else{
+
+                            when{
+                                tablero[it2][it].second == 0 -> casillas[it2][it].setImageResource(R.drawable.circulo_rojo_uno)
+                                tablero[it2][it].second == 1 -> casillas[it2][it].setImageResource(R.drawable.circulo_rojo_dos)
+                                tablero[it2][it].second == 2 -> casillas[it2][it].setImageResource(R.drawable.circulo_rojo_tres)
+                            }
+
+                        }
+                    }
+
+                    return tablero[0][it].first
+                }
+            }
+
+        }
+
+        if (tablero[0][0].first != 0){
+            if (tablero[0][0].first == tablero[1][1].first && tablero[1][1].first == tablero[2][2].first){
+
+                for (it in 0 until tablero.size){
+
+                    if (tablero[0][0].first == 1){
 
                         when{
-                            tablero[it2][it].second == 0 -> casillas[it2][it].setImageResource(R.drawable.equis_azul_uno)
-                            tablero[it2][it].second == 1 -> casillas[it2][it].setImageResource(R.drawable.equis_azul_dos)
-                            tablero[it2][it].second == 2 -> casillas[it2][it].setImageResource(R.drawable.equis_azul_tres)
+                            tablero[it][it].second == 0 -> casillas[it][it].setImageResource(R.drawable.equis_azul_uno)
+                            tablero[it][it].second == 1 -> casillas[it][it].setImageResource(R.drawable.equis_azul_dos)
+                            tablero[it][it].second == 2 -> casillas[it][it].setImageResource(R.drawable.equis_azul_tres)
                         }
 
                     }else{
 
                         when{
-                            tablero[it2][it].second == 0 -> casillas[it2][it].setImageResource(R.drawable.circulo_rojo_uno)
-                            tablero[it2][it].second == 1 -> casillas[it2][it].setImageResource(R.drawable.circulo_rojo_dos)
-                            tablero[it2][it].second == 2 -> casillas[it2][it].setImageResource(R.drawable.circulo_rojo_tres)
+                            tablero[it][it].second == 0 -> casillas[it][it].setImageResource(R.drawable.circulo_rojo_uno)
+                            tablero[it][it].second == 1 -> casillas[it][it].setImageResource(R.drawable.circulo_rojo_dos)
+                            tablero[it][it].second == 2 -> casillas[it][it].setImageResource(R.drawable.circulo_rojo_tres)
                         }
 
                     }
+
                 }
 
-                return tablero[0][it].first
+                return tablero[0][0].first
             }
         }
 
-        if (tablero[0][0] == tablero[1][1] && tablero[1][1] == tablero[2][2]){
+        if (tablero[0][2].first != 0){
+            if (tablero[0][2].first == tablero[1][1].first && tablero[1][1].first == tablero[2][0].first){
 
-            for (it in 0 until tablero.size){
+                var it2 = 2
 
-                if (tablero[it][it].first == tablero[it][it].first && tablero[it][it].first == tablero[it][it].first){
+                for (it in 0 until tablero.size){
 
-                    when{
-                        tablero[it][it].second == 0 -> casillas[it][it].setImageResource(R.drawable.equis_azul_uno)
-                        tablero[it][it].second == 1 -> casillas[it][it].setImageResource(R.drawable.equis_azul_dos)
-                        tablero[it][it].second == 2 -> casillas[it][it].setImageResource(R.drawable.equis_azul_tres)
+                    if (tablero[0][2].first == 1){
+
+                        when{
+                            tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_uno)
+                            tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_dos)
+                            tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_tres)
+                        }
+
+                    }else{
+
+                        when{
+                            tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_uno)
+                            tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_dos)
+                            tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_tres)
+                        }
+
                     }
 
-                }else{
-
-                    when{
-                        tablero[it][it].second == 0 -> casillas[it][it].setImageResource(R.drawable.circulo_rojo_uno)
-                        tablero[it][it].second == 1 -> casillas[it][it].setImageResource(R.drawable.circulo_rojo_dos)
-                        tablero[it][it].second == 2 -> casillas[it][it].setImageResource(R.drawable.circulo_rojo_tres)
-                    }
-
+                    it2--
                 }
 
+                return tablero[2][0].first
             }
-
-            return tablero[0][0].first
-        }
-        if (tablero[0][2] == tablero[1][1] && tablero[1][1] == tablero[2][0]){
-
-            var it2 = 2
-
-            for (it in 0 until tablero.size){
-
-                if (tablero[it][it].first == tablero[it][it].first && tablero[it][it].first == tablero[it][it].first){
-
-                    when{
-                        tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_uno)
-                        tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_dos)
-                        tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.equis_azul_tres)
-                    }
-
-                }else{
-
-                    when{
-                        tablero[it][it2].second == 0 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_uno)
-                        tablero[it][it2].second == 1 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_dos)
-                        tablero[it][it2].second == 2 -> casillas[it][it2].setImageResource(R.drawable.circulo_rojo_tres)
-                    }
-
-                }
-
-                it2--
-            }
-
-            return tablero[2][0].first
         }
 
         return 0
