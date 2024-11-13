@@ -125,7 +125,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:adjustViewBounds="true"
-                            app:layout_constraintBottom_toTopOf="ej3_c1_tv1"
+                            app:layout_constraintBottom_toTopOf="@id/ej3_c1_tv1"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:srcCompat="@tools:sample/avatars" />
 
@@ -179,7 +179,7 @@
                             android:adjustViewBounds="true"
                             tools:srcCompat="@tools:sample/avatars"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="ej3_c2_tv1"/>
+                            app:layout_constraintBottom_toTopOf="@id/ej3_c2_tv1"/>
 
                         <TextView
                             android:id="@+id/ej3_c2_tv1"
@@ -231,7 +231,7 @@
                             android:adjustViewBounds="true"
                             tools:srcCompat="@tools:sample/avatars"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="ej3_c3_tv1"/>
+                            app:layout_constraintBottom_toTopOf="@id/ej3_c3_tv1"/>
 
                         <TextView
                             android:id="@+id/ej3_c3_tv1"
@@ -283,7 +283,7 @@
                             android:adjustViewBounds="true"
                             tools:srcCompat="@tools:sample/avatars"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="ej3_c4_tv1"/>
+                            app:layout_constraintBottom_toTopOf="@id/ej3_c4_tv1"/>
 
                         <TextView
                             android:id="@+id/ej3_c4_tv1"
@@ -335,7 +335,7 @@
                             android:adjustViewBounds="true"
                             tools:srcCompat="@tools:sample/avatars"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="ej3_c5_tv1"/>
+                            app:layout_constraintBottom_toTopOf="@id/ej3_c5_tv1"/>
 
                         <TextView
                             android:id="@+id/ej3_c5_tv1"
@@ -387,7 +387,7 @@
                             android:adjustViewBounds="true"
                             tools:srcCompat="@tools:sample/avatars"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toTopOf="ej3_c6_tv1"/>
+                            app:layout_constraintBottom_toTopOf="@id/ej3_c6_tv1"/>
 
                         <TextView
                             android:id="@+id/ej3_c6_tv1"
