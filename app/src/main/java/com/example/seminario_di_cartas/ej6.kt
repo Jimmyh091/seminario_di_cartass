@@ -39,7 +39,7 @@ class ej6 : AppCompatActivity() {
 
         botonPasarDatos.setOnClickListener {
             var intent = Intent(this, ej6Objetivo::class.java)
-            intent.putExtra("num", num.toInt())
+            intent.putExtra("num", num)
             intent.putExtra("input", tiet.text.toString())
             startActivity(intent)
         }

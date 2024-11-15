@@ -16,7 +16,7 @@
             android:name=".ej7Objetivo"
             android:exported="false" />
         <activity
-            android:name=".ej6"
+            android:name=".ej7"
             android:exported="false" />
         <activity
             android:name=".ej6Objetivo"
@@ -38,7 +38,7 @@
             android:name=".ej3"
             android:exported="false" />
         <activity
-            android:name=".ej7"
+            android:name=".ej6"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

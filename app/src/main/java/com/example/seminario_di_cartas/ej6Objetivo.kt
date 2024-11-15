@@ -25,7 +25,7 @@ class ej6Objetivo : AppCompatActivity() {
         tv1 = findViewById(R.id.ej6Objetivo_tv1)
         tv2 = findViewById(R.id.ej6Objetivo_tv2)
 
-        tv1.text = "Numero recibido " + intent.getIntExtra("num", 0)
+        tv1.text = "Numero recibido: " + intent.getIntExtra("num", 0)
         tv2.text = "Texto recibido: " + intent.getStringExtra("input")
     }
 }
