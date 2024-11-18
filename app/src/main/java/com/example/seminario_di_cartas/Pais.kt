@@ -1,3 +1,9 @@
 package com.example.seminario_di_cartas
 
-data class Pais(var nombre : String, var habitantes : Int)
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class Pais(var nombre : String, var habitantes : Int) : Parcelable{
+    afñlskdjfñaslkdfjakowdjflñsakjoikdfnlkadowpiadvlkjslidjfoiwnoijnklfsndokvjaksljbdvkljhniawubkehrsjbfldkjhuvicuhaklesjkdzdjkuiñ-a-señfjuaks.-zkjnf.kvucnlairusbhkfxbarlvnckul,rrusbhxdujlaicubalsrkiiuxbjlkbjirbguuuuuuuuuuuuvpuoaiiesrjhbqovgiouqbgpoiua8uvhbn38jndvouayirshjboqiuuuuuuuuuuvbaxj,zhvbdaouilylrsbkaj,dvnxckjb adriuszhkvbgfluhk duxxxwsglrnjioascuhkllllllllxjd5yfouiiiiiicsdekjimrb3fhvjsduwng7fudnu
+}

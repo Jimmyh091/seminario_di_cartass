@@ -52,68 +52,15 @@ class tresEnRaya : AppCompatActivity() {
             recreate()
         }
 
-        casillas[0][0].setOnClickListener {
-
-            Log.v("Casillas", "Boton 0-0 pulsado")
-            jugar(0, 0)
-
+        for (it1 in 0 until casillas.size){
+            for (it2 in 0 until casillas[0].size){
+                casillas[it1][it2].setOnClickListener{
+                    Log.v("Casillas", "Boton $it1-$it2 pulsado")
+                    jugar(it1, it2)
+                }
+            }
         }
 
-        casillas[0][1].setOnClickListener {
-
-            Log.v("Casillas", "Boton 0-1 pulsado")
-            jugar(0, 1)
-
-        }
-
-        casillas[0][2].setOnClickListener {
-
-            Log.v("Casillas", "Boton 0-2 pulsado")
-            jugar(0, 2)
-
-        }
-
-        casillas[1][0].setOnClickListener {
-
-            Log.v("Casillas", "Boton 1-0 pulsado")
-            jugar(1, 0)
-
-        }
-
-        casillas[1][1].setOnClickListener {
-
-            Log.v("Casillas", "Boton 1-1 pulsado")
-            jugar(1, 1)
-
-        }
-
-        casillas[1][2].setOnClickListener {
-
-            Log.v("Casillas", "Boton 1-2 pulsado")
-            jugar(1, 2)
-
-        }
-
-        casillas[2][0].setOnClickListener {
-
-            Log.v("Casillas", "Boton 2-0 pulsado")
-            jugar(2, 0)
-
-        }
-
-        casillas[2][1].setOnClickListener {
-
-            Log.v("Casillas", "Boton 2-2 pulsado")
-            jugar(2, 1)
-
-        }
-
-        casillas[2][2].setOnClickListener {
-
-            Log.v("Casillas", "Boton 2-2 pulsado")
-            jugar(2, 2)
-
-        }
     }
 
     fun jugar(x : Int, y : Int){
