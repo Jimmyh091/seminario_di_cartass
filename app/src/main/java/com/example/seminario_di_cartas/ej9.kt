@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ejPais : AppCompatActivity() {
+class ej9 : AppCompatActivity() {
 
     private lateinit var botonEsp : Button
     private lateinit var botonFra : Button
@@ -27,7 +27,7 @@ class ejPais : AppCompatActivity() {
         botonEsp = findViewById(R.id.ejPais_Esp)
         botonFra = findViewById(R.id.ejPais_Fra)
 
-        var intent = Intent(this, ejPaisObjetivo::class.java)
+        var intent = Intent(this, ej9Objetivo::class.java)
 
         botonEsp.setOnClickListener{
             var esp = Pais("España", R.drawable.bandera_espana, 42000000)

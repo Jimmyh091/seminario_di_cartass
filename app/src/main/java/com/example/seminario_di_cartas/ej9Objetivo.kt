@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ejPaisObjetivo : AppCompatActivity() {
+class ej9Objetivo : AppCompatActivity() {
 
     private lateinit var nombre : TextView
     private lateinit var bandera : ImageView

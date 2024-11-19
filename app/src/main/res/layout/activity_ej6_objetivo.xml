@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ej6Objetivo">
+    tools:context=".ej7Objetivo">
 
   <TextView
       android:id="@+id/ej6Objetivo_tv1"

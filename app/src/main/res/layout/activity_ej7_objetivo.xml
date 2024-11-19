@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ej7Objetivo">
+    tools:context=".ej8Objetivo">
 
     <TextView
         android:id="@+id/ej7Objetivo_tv1"
