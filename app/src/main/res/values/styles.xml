@@ -6,5 +6,6 @@
     </style>
     <style name="BotonBonito">
         <item name="backgroundTint">@color/asulClarito</item>
+        <item name="cornerRadius">10dp</item>
     </style>
 </resources>

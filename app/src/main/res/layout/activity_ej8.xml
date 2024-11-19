@@ -5,16 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ej7">
-
-    <TextView
-        android:id="@+id/ej6_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:text=""
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".ej8">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -23,22 +14,45 @@
         android:layout_margin="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ej6_tv">
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ej6_tiet"
+            android:id="@+id/ej7_tiet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Texto a pasar" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/ej6_b"
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
+        android:id="@+id/ej7_b_aniadirDatos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Pasar datos"
+        android:text="Añadir a lista"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
+        android:id="@+id/ej7_b_pasarDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pasar datos"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@id/ej7_b_aniadirDatos" />
+
+    <TextView
+        android:id="@+id/ej7_b_aniadirDatos_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cadenas aniadidas: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ej7_b_pasarDatos" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

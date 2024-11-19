@@ -30,7 +30,7 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/lupa" />
 
         <ImageView
             android:layout_width="0dp"
@@ -39,7 +39,7 @@
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/estrella" />
 
     </LinearLayout>
 
@@ -77,7 +77,8 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    
+            android:src="@drawable/pan" />
 
                 <TextView
                     android:id="@+id/ej2_cl1_tv1"
@@ -95,7 +96,8 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    
+            android:src="@drawable/pan" />
 
             </LinearLayout>
 
@@ -152,7 +154,8 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    
+            android:src="@drawable/pan" />
 
                 <TextView
                     android:id="@+id/ej2_cl2_tv1"
@@ -170,7 +173,8 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    
+            android:src="@drawable/pan" />
 
             </LinearLayout>
 
@@ -226,7 +230,8 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    
+            android:src="@drawable/pan" />
 
                 <TextView
                     android:id="@+id/ej2_cl3_tv1"
@@ -244,7 +249,8 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    
+            android:src="@drawable/pan" />
 
             </LinearLayout>
 

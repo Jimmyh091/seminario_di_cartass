@@ -26,6 +26,7 @@
 
     <TextView
         android:id="@+id/textView3"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -45,58 +46,67 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b1"
+            style="@style/BotonBonito"
+            android:layout_margin="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maqueta 1"
-            android:backgroundTint="@color/asulClarito"/>
+            android:text="Maqueta 1"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b2"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Maqueta 2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b3"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Maqueta 3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b4"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Maqueta 4" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b5"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejercicio 5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b6"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tres en raya" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b7"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejercicio 2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b8"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejercicio 3" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b9"
+            style="@style/BotonBonito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ejercicio4" />
+            android:text="Ejercicio 4" />
 
     </LinearLayout>
 

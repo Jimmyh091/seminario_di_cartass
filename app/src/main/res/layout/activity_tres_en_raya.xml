@@ -129,7 +129,8 @@
 
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/tresEnRaya_b"
         android:layout_width="140dp"
         android:layout_height="wrap_content"

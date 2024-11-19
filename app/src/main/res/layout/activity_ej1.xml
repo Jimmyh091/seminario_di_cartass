@@ -23,27 +23,29 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@drawable/pan" />
     </LinearLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ej1_button1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="30dp"
         app:layout_constraintVertical_weight="1"
-        android:text="Button"
+        android:text="Pan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/ej1_button2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ej1_button2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="30dp"
-        android:text="Button"
+        android:text="VIno"
         app:layout_constraintVertical_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +56,7 @@
         android:id="@+id/ej1_textView1"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="TextView"
+        android:text="Hola manu, buenos dias y buenos dias, te deseo buenos dias y unos muy buenos dias"
         android:padding="30dp"
         app:layout_constraintVertical_weight="3"
         app:layout_constraintBottom_toTopOf="@id/ej1_space1"
@@ -67,7 +69,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
-        android:text="TextView"
+        android:text="Buenos buenos buenos buenos, muy buenos buenas, buenas. Buenos buena bunea"
         app:layout_constraintBottom_toBottomOf="@+id/ej1_textView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ej1_textView1"
@@ -82,32 +84,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ej1_button3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="hola"
+        android:layout_margin="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ej1_space1"
         app:layout_constraintEnd_toStartOf="@+id/ej1_button4"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ej1_button4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="manu"
+        android:layout_margin="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/ej1_button3"
         app:layout_constraintEnd_toStartOf="@+id/ej1_button5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ej1_button3"
         app:layout_constraintTop_toTopOf="@+id/ej1_button3" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ej1_button5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="que tal"
+        android:layout_margin="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/ej1_button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

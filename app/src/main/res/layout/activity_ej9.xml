@@ -7,17 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".ej9">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ejPais_Esp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="España"
+        android:text="Españñña"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/asulClarito"
         android:id="@+id/ejPais_Fra"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
