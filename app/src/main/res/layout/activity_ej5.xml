@@ -43,56 +43,56 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Maqueta 1"
             android:backgroundTint="@color/asulClarito"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Maqueta 2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maqeta 3" />
+            android:text="Maqueta 3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Maqueta 4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejercicio 5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tres en raya" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejercicio 2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ejercicio 3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/ej5_b9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
