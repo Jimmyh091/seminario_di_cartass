@@ -47,7 +47,8 @@
             android:id="@+id/ej5_b1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Maqueta 1" />
+            android:text="Maqueta 1"
+            android:backgroundTint="@color/asulClarito"/>
 
         <Button
             android:id="@+id/ej5_b2"

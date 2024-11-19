@@ -4,4 +4,7 @@
         <item name="android:fontFamily">@font/lapiz</item>
         <item name="android:textSize">17sp</item>
     </style>
+    <style name="BotonBonito">
+        <item name="backgroundTint">@color/asulClarito</item>
+    </style>
 </resources>
