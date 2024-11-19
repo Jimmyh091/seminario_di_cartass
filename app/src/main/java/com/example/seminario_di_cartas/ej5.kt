@@ -34,16 +34,19 @@ class ej5 : AppCompatActivity() {
             findViewById(R.id.ej5_b9)
         )
 
-        for (it in 1..9){
-            if (it != 5){
-                listaBotones[it - 1].setOnClickListener {
-                    startActivity(Intent(this, "ej$it"::class.java))
-                }
-            }else{
-                listaBotones[4].setOnClickListener {
+        var nombre : String
+
+        for (it2 in 1..9){
+            listaBotones[it2 - 1].setOnClickListener {
+                nombre = "ej$it2"
+
+                if (it2 != 5){
+                    startActivity(Intent(this, Class.forName("$packageName.$nombre")))
+                }else{
                     Toast.makeText(this, "El empanamiento es infinito", Toast.LENGTH_LONG).show()
                 }
             }
+
         }
 
     }

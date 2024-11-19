@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isInvisible
 
 class ej6 : AppCompatActivity() {
 
@@ -46,6 +47,7 @@ class ej6 : AppCompatActivity() {
         )
 
         texto = findViewById(R.id.resultado)
+        texto.isInvisible = true
         botonReset = findViewById(R.id.tresEnRaya_b)
 
         botonReset.setOnClickListener{
@@ -101,20 +103,21 @@ class ej6 : AppCompatActivity() {
                 casillas[x][y].isEnabled = false
 
                 if (comprobarVictoria() == 2){
-                    resultado()
+                    mostrarResultado()
                 }
 
             }else{
-                resultado()
-            }            
+                mostrarResultado()
+            }
         }else{
-            resultado()
+            mostrarResultado()
         }
-        
+
     }
 
-    fun resultado(){
+    fun mostrarResultado(){
 
+        texto.isInvisible = false
         val resultado = comprobarVictoria()
 
         var titulo = ""

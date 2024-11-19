@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Seminario_di_cartas" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.hola" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/lapiz</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="Theme.Seminario_di_cartas" parent="Base.Theme.Seminario_di_cartas" />
