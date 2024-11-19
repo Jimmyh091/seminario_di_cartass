@@ -1,9 +1,10 @@
 package com.example.seminario_di_cartas
 
 import android.os.Parcelable
+import android.widget.ImageView
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Pais(var nombre : String, var habitantes : Int) : Parcelable{
-    afñlskdjfñaslkdfjakowdjflñsakjoikdfnlkadowpiadvlkjslidjfoiwnoijnklfsndokvjaksljbdvkljhniawubkehrsjbfldkjhuvicuhaklesjkdzdjkuiñ-a-señfjuaks.-zkjnf.kvucnlairusbhkfxbarlvnckul,rrusbhxdujlaicubalsrkiiuxbjlkbjirbguuuuuuuuuuuuvpuoaiiesrjhbqovgiouqbgpoiua8uvhbn38jndvouayirshjboqiuuuuuuuuuuvbaxj,zhvbdaouilylrsbkaj,dvnxckjb adriuszhkvbgfluhk duxxxwsglrnjioascuhkllllllllxjd5yfouiiiiiicsdekjimrb3fhvjsduwng7fudnu
+data class Pais(var nombre : String, var bandera : Int, var habitantes : Int) : Parcelable{
+
 }
